@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*::before, *::after {
+    box-sizing: border-box;
+}
+
+#main {
+    width: auto;
+    height: 100px;
+}
+
+#bg-custom {
+    background: linear-gradient(to right, #FEFF86, #FFB4B4, #DAF5FF);
+    transition: all 0.4s ease;
+}
+
+#img {
+    max-width: 100%;
+    width: 150px;
+    height: 150px;
+    user-select: none;
+}
+
+#o-hidden {
+    overflow: hidden !important;
+}

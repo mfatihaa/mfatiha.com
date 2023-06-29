@@ -1,0 +1,25 @@
+{
+  "name": "product_4life",
+  "version": "1.0.0",
+  "description": "Halaman Link Pembelian Product 4Life",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mfatihaa/product_4Life.git"
+  },
+  "keywords": [
+    "Product",
+    "4life",
+    "Transfer",
+    "Factor"
+  ],
+  "author": "Muhammad Fatih Aulia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mfatihaa/product_4Life/issues"
+  },
+  "homepage": "https://github.com/mfatihaa/product_4Life#readme"
+}
