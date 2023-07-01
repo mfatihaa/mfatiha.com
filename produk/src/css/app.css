@@ -27,3 +27,7 @@
 #o-hidden {
     overflow: hidden !important;
 }
+
+.full {
+    height: 100px;
+}

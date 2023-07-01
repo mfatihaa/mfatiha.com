@@ -14,14 +14,27 @@ document.addEventListener("keydown", function (event) {
   }
 });
 
-// Realtime
-function times() {
-  var realtime = new Date().toLocaleTimeString();
-  var clock = document.getElementById("clock");
+// Loader
+onload = function () {
+  let id = document.getElementById("loader");
+  let main = document.getElementById("main");
+  let div = document.createElement("div");
 
-  clock.innerHTML = "Sekarang Pukul" + " " + realtime + " " + "WIB";
-  setTimeout(times, 1000);
-}
+  div.textContent = "Memuat Halaman";
+  div.style.fontSize = "28px";
+  id.appendChild(div);
+  main.style.display = "none";
+  
+  let loader = setInterval(() => {
+    div.textContent = div.textContent + ".";
+  }, 1000);
+  
+  setTimeout(() => {
+    clearInterval(loader);
+    div.style.display = "none";
+    main.style.display = "block";
+  }, 5000);
+};
 
 // View Visitors Page
 var countVisitor = localStorage.getItem("countVisitor");

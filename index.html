@@ -12,7 +12,11 @@
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
 </head>
 
-<body onload="times()">
+<body>
+    <div id="loader" class="d-flex justify-content-center align-items-center full">
+        <!-- New Element Created -->
+    </div>
+    
     <main class="container border-0 rounded" id="main">
         <div class="row justify-content-center">
             <div class="col-xl-4 col-lg-6 col-md-8">
@@ -99,12 +103,6 @@
                                 </div>
                             </div>
                         </span>
-                        <p class="text-muted text-center mt-4">
-                            <span class="text-dark text-decoration-none" id="clock"></span>
-                        </p>
-                        <p class="text-muted text-center">
-                            <span class="text-dark text-decoration-none" id="visitor"></span>
-                        </p>
                         <div class="btn-change">
                             <input type="text" class="form-control shadow-none border-0" placeholder="Input your color..." id="input-change">
                         </div>
