@@ -26,27 +26,6 @@ setTimeout(function () {
   loader.style.display = "none";
 }, 5000);
 
-// View Visitors Page
-var countVisitor = localStorage.getItem("countVisitor");
-if (countVisitor === null) {
-  countVisitor = 0;
-} else {
-  countVisitor = parseInt(countVisitor);
-}
-countVisitor++;
-localStorage.setItem("countVisitor", countVisitor);
-document.getElementById("visitor").innerHTML =
-  "Jumlah Pengunjung Halaman : " + countVisitor + " " + "Pengunjung";
-
-// Change Input Card
-var card = document.getElementById("bg-custom");
-var input = document.getElementById("input-change");
-
-input.addEventListener("input", () => {
-  card.style.borderRadius = input.value;
-  card.style.background = input.value;
-});
-
 // Multipe Title
 var titleText = [
   "Welcome To MyLink",
