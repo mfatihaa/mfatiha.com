@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div id="loader" class="d-flex justify-content-center align-items-center full">
+    <div id="loader">
         <!-- New Element Created -->
     </div>
 
@@ -798,26 +798,16 @@
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script>
         // Loader
-        onload = function () {
-            let id = document.getElementById("loader");
-            let main = document.getElementById("main");
-            let div = document.createElement("div");
+        var loader = document.getElementById("loader");
 
-            div.textContent = "Loading";
-            div.style.fontSize = "28px";
-            id.appendChild(div);
-            main.style.display = "none";
-            
-            let loader = setInterval(() => {
-                div.textContent = div.textContent + ".";
-            }, 1000);
-            
-            setTimeout(() => {
-                clearInterval(loader);
-                div.style.display = "none";
-                main.style.display = "block";
-            }, 5000);
-        };
+        window.addEventListener("preloader", function () {
+        loader.style.display = "block";
+        });
+
+        setTimeout(function () {
+        clearInterval(loader);
+        loader.style.display = "none";
+        }, 5000);
     </script>
 </body>
 

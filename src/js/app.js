@@ -15,26 +15,16 @@ document.addEventListener("keydown", function (event) {
 });
 
 // Loader
-onload = function () {
-  let id = document.getElementById("loader");
-  let main = document.getElementById("main");
-  let div = document.createElement("div");
+var loader = document.getElementById("loader");
 
-  div.textContent = "Memuat Halaman";
-  div.style.fontSize = "28px";
-  id.appendChild(div);
-  main.style.display = "none";
-  
-  let loader = setInterval(() => {
-    div.textContent = div.textContent + ".";
-  }, 1000);
-  
-  setTimeout(() => {
-    clearInterval(loader);
-    div.style.display = "none";
-    main.style.display = "block";
-  }, 5000);
-};
+window.addEventListener("preloader", function () {
+  loader.style.display = "block";
+});
+
+setTimeout(function () {
+  clearInterval(loader);
+  loader.style.display = "none";
+}, 5000);
 
 // View Visitors Page
 var countVisitor = localStorage.getItem("countVisitor");
