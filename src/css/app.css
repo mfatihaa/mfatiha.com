@@ -8,8 +8,15 @@
 }
 
 #main {
-    width: auto;
-    height: 100px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main > .row {
+    width: 50vh;
 }
 
 #bg-custom {
@@ -22,10 +29,6 @@
     width: 150px;
     height: 150px;
     user-select: none;
-}
-
-#o-hidden {
-    overflow: hidden !important;
 }
 
 #loader {
